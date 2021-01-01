@@ -1,0 +1,35 @@
+@import "variables";
+@import "boton";
+@import "header";
+@import "menuprincipal";
+@import "productos";
+@import "media";
+@import "boton";
+@import "titulos";
+@import "footer";
+@import "aside";
+@import "form";
+@import "error404";
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family: $fuenteSecundaria;
+    background-color: $backgroundColor;
+    color: $colorUno;
+}
+
+
+
+
+
+
+
+

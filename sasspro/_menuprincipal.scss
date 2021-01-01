@@ -1,0 +1,297 @@
+// Menu principal index
+@media screen and (min-width: 1050px){
+   
+    #navbar{
+        display: none;
+        .iconify{
+            display: none;
+        }
+    }
+    
+    #menu1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 300;
+    margin: 300;
+    background: $colorTres;
+    font-family: $fuenteSecundaria;
+
+    
+    
+    .li1{
+        display: block;
+        color: $colorLetraClaro;
+        position: relative;
+        float: left;
+        background: $colorTres;
+        font-size: 1rem;
+    }
+}
+
+#menu2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 300;
+    margin: 300;
+    background: $colorTres;
+    font-family: $fuenteSecundaria;
+    .li1{
+        display: block;
+        color: $colorLetraClaro;
+        position: relative;
+        float: left;
+        background: $colorTres;
+        font-size: 1rem;
+    }
+}
+
+
+.li1{
+    ul{
+     display: none;
+     list-style: none;
+     background: $colorTres;
+     z-index: 1;
+
+     
+    }
+}
+
+
+ul{
+    li{
+        a{
+            display: block;
+            padding: 1em;
+            text-decoration: none;
+            white-space: nowrap;
+            color:$colorLetraClaro;  
+            
+
+        }
+    }
+}
+
+li:hover> {
+     ul{
+        display: block;
+        position: relative;
+     }
+
+    .menu3{
+        display: block;
+        position: absolute;
+           }
+       
+    
+    
+   }
+
+
+ul{
+    li{
+        a:hover{
+            background: $colorCuatro;
+            text-decoration: none;
+            
+        }
+    }
+}
+
+li:hover{
+        li{
+            float: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1049px) {
+
+// Menu principal index
+.menu-container{
+    display: none;
+}
+
+ 
+#navbar {
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ list-style: none;
+ padding: 200;
+ margin: 200;
+ background: $colorTres;
+ font-family: $fuenteSecundaria;
+ z-index: 1;
+                          
+ }
+
+.menu3{
+    list-style: none;
+}
+.li1{
+ display: block;
+ color: $colorUno;
+ position: relative;
+ float: left;
+ background: $colorTres;
+ font-size: 1rem;
+}
+
+
+
+.li1{
+ul{
+display: none;
+list-style: none;
+background: $colorTres;
+z-index: 2;
+
+
+}
+}
+
+
+ul{
+li{
+ a{
+     display: block;
+     padding: 1em;
+     text-decoration: none;
+     white-space: nowrap;
+     color:$colorLetraClaro;  
+     
+
+ }
+}
+}
+
+
+
+
+}
+// Termina menu principal index
+   
+// Menu Responsive para celular
+
+@media screen and (max-width: 576px){
+
+// Menu principal index
+.menu-container{
+    display: none;
+}
+
+ 
+#navbar {
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ list-style: none;
+ padding: 200;
+ margin: 200;
+ background: $colorTres;
+ font-family: $fuenteSecundaria;
+ z-index: 1;
+                          
+ }
+
+.menu3{
+    list-style: none;
+}
+.li1{
+ display: block;
+ color: $colorUno;
+ position: relative;
+ float: left;
+ background: $colorTres;
+ font-size: 1rem;
+}
+
+
+
+.li1{
+ul{
+display: none;
+list-style: none;
+background: $colorTres;
+z-index: 2;
+
+
+}
+}
+
+
+ul{
+li{
+ a{
+     display: block;
+     padding: 1em;
+     text-decoration: none;
+     white-space: nowrap;
+     color:$colorLetraClaro;  
+     
+
+ }
+}
+}
+
+
+
+
+}
+// Termina menu principal index
+
+
+
+// Carrito
+#carrito{
+    display: flex;
+        
+        justify-content: flex-end;
+        padding-right: 15px;
+        padding-top: 10px;
+    a{
+        justify-content: center;
+            height: 30px;
+            width: 50px;
+            font-family: $fuenteSecundaria;
+            text-align: center;
+    .iconify{
+        content: url('https://api.iconify.design/ic:outline-shopping-cart.svg?height=24');
+        vertical-align: -0.125em;
+        height: 20px;
+        width: 20px;
+        color: $colorLetraClaro;
+    }  
+     }
+    a:link{
+    color: $colorUno;
+    text-decoration: none;
+     }
+    
+    a:focus{
+        
+        background: $colorCuatro;
+        
+    }
+
+    a:hover{
+        content: url('https://api.iconify.design/ic:outline-shopping-cart.svg?height=24');
+        vertical-align: -0.125em;
+        border-bottom: 1% solid;
+        color: $colorUno;
+        background: $colorSeis;
+        text-decoration: none;
+        border-radius: 8px;
+        
+    }
+
+    a:active{
+        background: $colorCuatro;
+        color: $colorCuatro;
+    }
+}

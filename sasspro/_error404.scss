@@ -1,0 +1,33 @@
+.error {
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  }
+  
+  .error-mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+  }
+  
+  .error-mensaje .container-error{
+    text-align: center;
+    color: #29335C;
+  
+  }
+  
+  .container-error h1{
+    font-size: 60px;
+    }
+  
+  .container-error p{
+    font-size: 18px;
+  }
+  
+  .animacion{
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite ;
+  }

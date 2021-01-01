@@ -1,0 +1,152 @@
+$boton:(
+    boton1: ($colorSeis, $colorUno),
+    boton2: (transparent, $colorUno),
+    boton3: ($colorSeis, $colorUno)
+);
+
+.m-button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    a{
+        text-align: center;
+    }
+   
+    
+ @each $nombre, $propiedades in $boton{
+     $color: nth($propiedades, 1);
+     $fontColor: nth($propiedades,2);
+    
+     
+    .boton--#{$nombre} {
+        background-color: $color;
+        color: $fontColor;
+
+    }
+        
+   }
+ }
+
+
+ .boton--boton1, .boton--boton2, .boton--boton3{
+     min-width: 130px;
+     position: relative;
+     display: inline-block;
+     text-align: center;
+     align-items: center;
+     padding: 5px;
+     margin: 10px 5px;
+     font-size: 14px;
+     border-radius: 8%;
+     text-decoration: none;
+     transform: all 1s;
+     
+ }
+
+.boton--boton1:hover{
+         background-color: $colorBoton2;
+         color: $colorLetraClaro;
+         text-decoration: none;
+
+     }
+
+.boton--boton1:active{
+         background-color: $colorBoton1;
+         box-shadow: 0 2px $colorBoton2;
+         color: $colorLetraClaro;
+         transform: translateY(4px);
+     }
+
+.boton--boton2:hover{
+        background-color: $colorBoton2;
+        color: $colorLetraClaro;
+        text-decoration: none;
+
+    }
+
+.boton--boton2:active{
+        background-color: $colorBoton1;
+        box-shadow: 0 2px $colorBoton2;
+        color: $colorLetraClaro;
+        transform: translateY(4px);
+    }
+
+ 
+
+//  Boton flotante
+
+#btn-flotante{
+    display: none;
+}
+
+.icono-flotante{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    
+}
+
+
+.flotante a{
+    content: url('https://api.iconify.design/ic:round-keyboard-arrow-up.svg?height=24');
+    vertical-align: -0.125em;
+    display: block;
+    text-decoration: none;
+    background: $colorLetraClaro;   
+    color: $colorUno; 
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    .iconify{
+        color: $colorUno;
+    }
+
+    
+}
+
+@media screen and (min-width: 1050px){
+    #btn-flotante{
+        display: none;
+    }
+    
+    .icono-flotante{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1;
+        
+    }
+    
+    
+    .flotante a{
+        content: url('https://api.iconify.design/ic:round-keyboard-arrow-up.svg?height=24');
+        vertical-align: -0.125em;
+        display: block;
+        text-decoration: none;
+        background: $colorLetraClaro;    
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+        transition: all 500ms ease;
+    
+        .iconify{
+            color: $colorUno;
+        }
+    }
+.flotante a:hover{
+    background: $colorLetraClaro;
+    color: $colorUno;
+}
+}
+
+
+
+
+    
